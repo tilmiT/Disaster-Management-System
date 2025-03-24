@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: #154741;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.disastermanagement.ComplainController">
+
+    <children>
+        <!-- Side Menu -->
+        <Pane  layoutX="-14.0" layoutY="-4.0" prefHeight="507.0" prefWidth="222.0" style="-fx-background-color: #06190A;">
+            <children>
+                <Pane fx:id="adminSection" prefHeight="507.0" prefWidth="222.0" style="-fx-background-color: #06190A;">
+                    <children>
+                        <Pane fx:id="adminSection" layoutX="27.0" layoutY="194.0" prefHeight="63.0" prefWidth="188.0" style="-fx-background-color: #154741;">
+                            <children>
+                                <ImageView fitHeight="47.0" fitWidth="42.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@Images/icons8-admin-settings-male-50.png" />
+                                    </image>
+                                </ImageView>
+                                <Label layoutX="89.0" layoutY="20.0" prefHeight="17.0" prefWidth="79.0" text="Admin " textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </Pane>
+                        <Pane fx:id="dashboard" layoutX="24.0" layoutY="280.0" prefHeight="63.0" prefWidth="188.0" style="-fx-background-color: #154741;">
+                            <children>
+                                <ImageView fitHeight="47.0" fitWidth="42.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@Images/icons8-dashboard-50.png" />
+                                    </image>
+                                </ImageView>
+                                <Label layoutX="89.0" layoutY="20.0" prefHeight="17.0" prefWidth="135.0" text="Dashboard" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </Pane>
+                        <Pane fx:id="reportDisaster" layoutX="25.0" layoutY="105.0" prefHeight="63.0" prefWidth="203.0" style="-fx-background-color: #154741;">
+                            <children>
+                                <ImageView fitHeight="47.0" fitWidth="42.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@Images/icons8-homepage-50.png" />
+                                    </image>
+                                </ImageView>
+                                <Label layoutX="89.0" layoutY="20.0" prefHeight="17.0" prefWidth="135.0" text="Report Disaster" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </Pane>
+                        <Label layoutX="46.0" layoutY="42.0" text="Disaster Management" textFill="WHITE">
+                            <font>
+                                <Font size="17.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+            </children>
+        </Pane>
+
+        <!-- Personal Information Section -->
+        <Label layoutX="216.0" layoutY="19.0" prefHeight="32.0" prefWidth="525.0" style="-fx-background-color: #408174;" text="Personal Information" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+
+        <GridPane layoutX="236.0" layoutY="78.0" prefHeight="132.0" prefWidth="499.0">
+            <columnConstraints>
+                <ColumnConstraints prefWidth="150.0" />
+                <ColumnConstraints prefWidth="350.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints prefHeight="30.0" />
+                <RowConstraints prefHeight="30.0" />
+                <RowConstraints prefHeight="30.0" />
+                <RowConstraints prefHeight="30.0" />
+            </rowConstraints>
+            <children>
+                <Label text="Full Name" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="fullNameField" GridPane.columnIndex="1" />
+
+                <Label text="Contact Number" textFill="WHITE" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="contactNumberField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                <Label text="Email Address" textFill="WHITE" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="emailField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                <Label text="National ID Number" textFill="WHITE" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="nationalIdField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            </children>
+        </GridPane>
+
+        <!-- Location Details Section -->
+        <Label layoutX="225.0" layoutY="243.0" prefHeight="26.0" prefWidth="153.0" text="Location Details" textFill="WHITE">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Label>
+
+        <GridPane layoutX="236.0" layoutY="287.0" prefHeight="132.0" prefWidth="499.0">
+            <columnConstraints>
+                <ColumnConstraints maxWidth="162.4" minWidth="154.4" prefWidth="162.4" />
+                <ColumnConstraints maxWidth="344.4" minWidth="336.80000000000007" prefWidth="336.80000000000007" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints prefHeight="30.0" />
+                <RowConstraints prefHeight="30.0" />
+                <RowConstraints prefHeight="30.0" />
+                <RowConstraints prefHeight="30.0" />
+            </rowConstraints>
+            <children>
+                <Label text="Street Address" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font></Label>
+                <TextField fx:id="streetAddressField" GridPane.columnIndex="1" />
+
+                <Label text="Grama Niladhari Division" textFill="WHITE" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="14.0" />
+                    </font></Label>
+                <TextField fx:id="gramaNiladhariField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                <Label text="Province" textFill="WHITE" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="14.0" />
+                    </font></Label>
+                <ComboBox fx:id="provinceComboBox" prefHeight="26.0" prefWidth="347.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <ComboBox fx:id="districtComboBox" prefWidth="347.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+                <Label text="District" textFill="WHITE" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="14.0" />
+                    </font></Label>
+            </children>
+        </GridPane>
+
+        <!-- Next Button -->
+        <Button layoutX="680.0" layoutY="445.0" mnemonicParsing="false" onAction="#handleNextButton" text="Next" />
+        <!--
+        <Button layoutX="680.0" layoutY="445.0" mnemonicParsing="false" onAction="#handleNextButton" text="Next" />-->
+    </children>
+</AnchorPane>

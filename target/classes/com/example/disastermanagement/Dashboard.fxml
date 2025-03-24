@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.TextField?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.disastermanagement.DashboardController">
+   <children>
+      <AnchorPane layoutX="3.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0">
+         <children>
+            <AnchorPane layoutX="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: #154741;">
+               <children>
+                  <Pane layoutX="-14.0" layoutY="-4.0" prefHeight="507.0" prefWidth="222.0" style="-fx-background-color: #06190A;">
+                     <children>
+                        <Pane fx:id="adminSection" layoutX="24.0" layoutY="194.0" prefHeight="63.0" prefWidth="188.0" style="-fx-background-color: #154741;">
+                           <children>
+                              <ImageView fitHeight="47.0" fitWidth="42.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/icons8-admin-settings-male-50.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="89.0" layoutY="20.0" prefHeight="17.0" prefWidth="79.0" text="Admin " textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="dashboard" layoutX="24.0" layoutY="280.0" prefHeight="63.0" prefWidth="208.0" style="-fx-background-color: #154741;">
+                           <children>
+                              <ImageView fitHeight="47.0" fitWidth="42.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/icons8-dashboard-50.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="89.0" layoutY="20.0" prefHeight="17.0" prefWidth="135.0" text="Dashboard" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="reportDisaster" layoutX="25.0" layoutY="105.0" prefHeight="63.0" prefWidth="188.0" style="-fx-background-color: #154741;">
+                           <children>
+                              <ImageView fitHeight="47.0" fitWidth="42.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/icons8-homepage-50.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="89.0" layoutY="20.0" prefHeight="17.0" prefWidth="135.0" text="Report Disaster" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Label layoutX="24.0" layoutY="38.0" prefHeight="26.0" prefWidth="188.0" text="Disaster Management" textFill="#fcfcfc">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <PieChart fx:id="disasterPieChart" layoutX="252.0" layoutY="109.0" prefHeight="357.0" prefWidth="445.0" />
+                  <Label layoutX="243.0" layoutY="43.0" prefHeight="20.0" prefWidth="273.0" text="Total Number of Reported Disasters" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="totalDisasterField" editable="false" layoutX="549.0" layoutY="41.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
